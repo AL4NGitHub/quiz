@@ -1,3 +1,3 @@
 # Quiz App
 
-Very basic quiz created in React and JavaScript.
+Very basic geography quiz app created in React and JavaScript.
