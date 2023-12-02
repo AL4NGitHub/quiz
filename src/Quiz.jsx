@@ -7,7 +7,9 @@ export function Quiz() {
   const two = ["Washington D.C", "Las Vegas", "Riyadh", "Tokio"];
   const three = ["Berlin", "Bern", "Paris", "Toronto"];
   const four = ["Ankara", "Rome", "Teheran", "Nairobi"];
-  const correct = [0, 0, 0, 3];
+  const five = ["Barcelona", "Havana", "Madrid", "Los Angeles"];
+  const six = ["Panama", "Seoul", "Pyongyang", "Manila"];
+  const correct = [0, 0, 0, 3, 2, 1];
 
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState(0);
@@ -16,9 +18,11 @@ export function Quiz() {
     "What is capital of USA",
     "What is capital of Germany",
     "What is capital of Kenya",
+    "What is capital of Spain",
+    "What is capital of South Korea",
   ];
 
-  const answers = [one, two, three, four];
+  const answers = [one, two, three, four, five, six];
 
   return (
     <>
@@ -26,7 +30,7 @@ export function Quiz() {
         <div className="left">
           <div className="questions-display">
             <span>
-              Question {questions}/{questionTable.length - 1}
+              Question {questions + 1}/{questionTable.length}
             </span>
           </div>
           <div className="question-display">
