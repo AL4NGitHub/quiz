@@ -1,0 +1,21 @@
+.question {
+  width: 75%;
+  height: 15%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 0.2rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  display: grid;
+  place-items: center start;
+  padding-left: 10%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s background ease-in, 0.2s border ease-in;
+  user-select: none;
+}
+
+.question:hover,
+.question:focus,
+.question:active {
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.2rem solid rgb(251, 251, 31);
+}
